@@ -1,0 +1,68 @@
+Requirements:
+
+<add-op> ::= + | -
+
+<additive-expression> ::= <multiplicative-expression> [ <add-op> <additive-expression> ]
+
+<assignment-expression> ::= IDENT = <conditional-expression>
+
+<compound-statement> ::= { [<declaration-list>] [<statement-list>] }
+
+<conditional-expression> ::= <logical-or-expression>
+
+<conditional-statement> ::= if ( <conditional-expression> ) <statement> [ else <statement> ]
+
+<constant> ::= INT_LIT | FLOAT_LIT
+
+<declaration> ::= <type-specifier> <initialized-declarator-list> ;
+
+<declaration-list> ::= <declaration> [ <declaration-list> ]
+
+<equality-op> ::= == | !=
+
+<equality-expression> ::= <relational-expression> [ <equality-op> <equality-expression> ]
+
+<expression-statement> ::= <assignment-expression> ;
+
+<floating-type-specifier> ::= float
+
+<for-statement> ::= for <for-expressions> <statement>
+
+<for-expressions> ::= ( <assignment-expression> ; <conditional-expression> ; <assignment-expression> )
+
+<initialized-declarator-list> ::= IDENT [, <initialized-declarator-list> ]
+
+<integer-type-specifier> ::= int
+
+<iterative-statement> ::= <while-statement> | <for-statement>
+
+<logical-and-expression> ::= <equality-expression> [ && <logical-and-expression> ]
+
+<logical-or-expression> ::= <logical-and-expression> [ || <logical-or-expression> ]
+
+<multiplicative-expression> ::= <primary-expression> [ <mult-op> <multiplicative-expression> ]
+
+<mult-op> ::= * | / | %
+
+<null-statement> ::= ;
+
+<parenthesized-expression> ::= ( <conditional-expression> )
+
+<primary-expression> ::= IDENT | <constant>
+           | <parenthesized-expression>
+
+<program> ::= void main () <compound-statement>
+
+<relational-expression> ::= <additive-expression> [ <relational-op> <relational-expression> ]
+
+<relational-op> ::= < | <= | > | >=
+
+<statement> ::= <expression-statement> | <compound-statement>
+           | <conditional-statement> | <iterative-statement>
+           | <null-statement>
+
+<statement-list> ::= <statement> [ <statement-list> ]
+
+<type-specifier> ::= <floating-type-specifier> | <integer-type-specifier>
+
+<while-statement> ::= while ( <conditional-expression> ) <statement>

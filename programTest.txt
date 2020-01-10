@@ -1,0 +1,35 @@
+void main(){
+	float listName, listName2, listName3;
+	int otherListName, otherListName2, otherListName3;
+
+	assignmentTest = testForOtherIdent;
+	assignmentTest2 = 10;
+	multTest = testForOtherIdent * 10 * blah;
+	addTest = blah2 + 2333.1;
+	compareTest = ident < 122;
+	equalityTest = ident1 != ident2;
+	andTest = true && truu == true;
+	orTest = something || somethingElse || anotherThing;
+	{
+		float listName, listName2, listName3;
+		int otherListName, otherListName2, otherListName3;
+
+		assignmentTest = testForOtherIdent;
+		assignmentTest2 = 10;
+		multTest = testForOtherIdent * 10 * blah;
+		addTest = blah2 + 2333.1;
+		compareTest = ident < 122;
+		if (this == that) Paul = happy else Paul = mad;
+		equalityTest = ident1 != ident2;
+		andTest = true && truu == true;
+		orTest = something || somethingElse || anotherThing;
+	}
+	andTest = true && truu == true;
+	if (this == that) Paul = happy else Paul = mad;
+
+	while (that != this) addTest = addTest + 1;
+
+	for (i = 3; i < 10; i = i + 1) Paul = happy;
+
+	integer1 = (10 / 2);
+}
